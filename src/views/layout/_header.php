@@ -33,10 +33,10 @@ use app\models\User;
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
                         <?php if ($user) : ?>
-                            <li><a class="dropdown-item" href="/profile">Meu perfil</a></li>
-                            <li><a class="dropdown-item" href="/logout" data-method="POST">Sair</a></li>
+                            <li><a class="dropdown-item" href="/profile">Profile</a></li>
+                            <li><a class="dropdown-item" href="/logout" data-method="POST">Logout</a></li>
                         <?php else : ?>
-                            <li><a class="dropdown-item" href="/login">Entrar</a></li>
+                            <li><a class="dropdown-item" href="/login">Login</a></li>
                         <?php endif; ?>
                     </ul>
                 </li>
