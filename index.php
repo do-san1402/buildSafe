@@ -31,4 +31,10 @@ $router->get('debt', 'debt/index', ['rules' => '@']);
 $router->post('debt/save', 'debt/save', ['rules' => '@']);
 $router->post('debt/{id}/delete', 'debt/delete', ['rules' => '@']);
 
+// QR
+$router->get('qr/user/create', 'qr/createUserQr', ['rules' => '@']);
+$router->get('qr/user/show', 'qr/updateUserQr', ['rules' => '@']);
+$router->post('qr/user/create', 'qr/createUserQr', ['rules' => '@']);
+
+
 $router->run();

@@ -52,11 +52,12 @@ class User extends Model
     /**
      * @var string
      */
+    protected $latest_user_qr;
 
     public function validate(): bool
     {
         if (empty($this->name)) {
-            $this->setErrors('Nome', '"Nome" é um campo obrigatório');
+            $this->setErrors('Name', '"Name" é um campo obrigatório');
         }
 
         if (!is_birthday_valid($this->birthday)) {
@@ -68,7 +69,7 @@ class User extends Model
         // }
 
         if (empty($this->password_hash)) {
-            $this->setErrors('Senha', '"Senha" é um campo obrigatório.');
+            $this->setErrors('Password', '"Password" é um campo obrigatório.');
         }
 
         return empty($this->getErrors());
@@ -150,5 +151,13 @@ class User extends Model
     public function getPasswordHash()
     {
         return $this->password_hash;
+    }
+    public function getLatestUserQr()
+    {
+        return $this->latest_user_qr;
+    }
+    public function setLatestUserQr($latest_user_qr): void
+    {
+        $this->latest_user_qr = $latest_user_qr;
     }
 }

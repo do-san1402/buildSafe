@@ -23,7 +23,6 @@ use app\widgets\Alert;
 
                         <div class="form-group mb-4">
                             <label class="form-label" for="company_name">Company name</label>
-                            <input type="text" id="company_name" name="company_name" class="form-control" maxlength="255" required value="<?= $model->getName() ?>" />
                             <select name="company_name" id="company_name" class="form-control">
                                 <option value="Hervey bay carpentry">Hervey bay carpentry</option>
                                 <option value="Heath Mcphellamy">Heath Mcphellamy</option>

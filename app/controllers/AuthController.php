@@ -43,7 +43,6 @@ class AuthController extends Controller
     public static function actionSignup()
     {
         $request = self::getRequest();
-        // dd($request);
         $model = new User();
 
         if ($request->isPost()) {

@@ -15,5 +15,8 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit"
+    },
+    "require": {
+        "khanamiryan/qrcode-detector-decoder": "^2.0"
     }
 }

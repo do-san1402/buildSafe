@@ -20,12 +20,6 @@ use app\models\User;
             <div class="row">
                 <div class="col-md-12">
                     <div class="form-outline mb-2">
-                        <input type="text" name="document" id="document" class="form-control document" maxlength="14" value="<?= $user->getDocument() ?>" required></input>
-                        <label class="form-label" for="document">CPF ou CNPJ</label>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="form-outline mb-2">
                         <input type="text" name="name" id="name" class="form-control" value="<?= $user->getName() ?>" required></input>
                         <label class="form-label" for="name">Nome</label>
                     </div>
